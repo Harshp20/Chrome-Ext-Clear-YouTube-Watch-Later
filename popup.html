@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear YouTube Watch Later</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            background-color: #a8c6ff;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 15rem;
+            width: 15rem;
+            padding: 0.5rem;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .btn {
+            position: relative;
+            bottom: 1rem;
+            width: 90%;
+            height: 2em;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(238, 238, 238);
+        }
+        .btn:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        .para {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <p class='para'>Please Navigate to your Watch Later playlist and click the button below.</p>
+        <button id='clearWatchLater' class="btn">Clear Watch Later</button>
+        <p><pre id='json'></pre></p>
+    </div>
+    <script src='popup.js'></script>
+</body>
+
+</html>
